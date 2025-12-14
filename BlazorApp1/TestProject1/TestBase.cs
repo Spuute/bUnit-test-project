@@ -30,10 +30,5 @@ public abstract class TestBase : TestContext
         Services.AddSingleton<AddPersonValidator>();
         Services.AddSingleton(_fakeApiService);
         Services.AddMudServices();
-        
-        RenderComponent<MudDialogProvider>();
-        RenderComponent<MudPopoverProvider>();
-        RenderComponent<MudThemeProvider>();
-        RenderComponent<MudSnackbarProvider>();
     }
 }
