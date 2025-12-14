@@ -10,25 +10,25 @@ namespace TestProject1;
 
 public abstract class TestBase : TestContext
 {
-    protected readonly IFixture _fixture;
-    protected readonly IApiService _fakeApiService;
-    protected readonly IMudDialogInstance _fakeDialogInstance;
-    protected readonly IClientErrorHandlingService _fakeClientErrorHandlingService;
+    protected readonly IFixture Fixture;
+    protected readonly IApiService FakeApiService;
+    protected readonly IMudDialogInstance FakeDialogInstance;
+    protected readonly IClientErrorHandlingService FakeClientErrorHandlingService;
 
     public TestBase()
     {
         JSInterop.Mode = JSRuntimeMode.Loose;
 
-        _fixture = new Fixture()
+        Fixture = new Fixture()
             .Customize(new CompositeCustomization(new AutoFakeItEasyCustomization()));
 
-        _fakeApiService = _fixture.Freeze<IApiService>();
-        _fakeDialogInstance = _fixture.Freeze<IMudDialogInstance>();
-        _fakeClientErrorHandlingService = _fixture.Freeze<IClientErrorHandlingService>();
+        FakeApiService = Fixture.Freeze<IApiService>();
+        FakeDialogInstance = Fixture.Freeze<IMudDialogInstance>();
+        FakeClientErrorHandlingService = Fixture.Freeze<IClientErrorHandlingService>();
         
-        Services.AddSingleton(_fakeClientErrorHandlingService);
+        Services.AddSingleton(FakeClientErrorHandlingService);
         Services.AddSingleton<AddPersonValidator>();
-        Services.AddSingleton(_fakeApiService);
+        Services.AddSingleton(FakeApiService);
         Services.AddMudServices();
     }
 }

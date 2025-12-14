@@ -13,7 +13,7 @@ public class SomethingDialogTests : TestBase
     public void Clicking_OK_Should_Call_Close_With_Ok_Result()
     {
         var cut = RenderComponent<SomethingDialog>(p =>
-            p.AddCascadingValue(_fakeDialogInstance)
+            p.AddCascadingValue(FakeDialogInstance)
         );
 
         // Kalla metoder indirekt via knappar eller direkt via instance
@@ -21,7 +21,7 @@ public class SomethingDialogTests : TestBase
             .GetMethod("Submit", BindingFlags.NonPublic | BindingFlags.Instance)
             ?.Invoke(cut.Instance, null);
 
-        A.CallTo(() => _fakeDialogInstance.Close(A<DialogResult>.Ignored)).MustHaveHappenedOnceExactly();
+        A.CallTo(() => FakeDialogInstance.Close(A<DialogResult>.Ignored)).MustHaveHappenedOnceExactly();
     }
 
     [Fact]
