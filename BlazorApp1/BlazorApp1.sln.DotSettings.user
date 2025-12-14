@@ -1,0 +1,25 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=3BB1BEFF_002D2F5C_002D49E2_002DA296_002DBB6D6D832FB6_002Fd_003APages_002Ff_003AHome_002Erazor_002Fz_003A2_002D0/@EntryIndexedValue">ExplicitlyExcluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003ARenderedFragmentExtensions_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2025_002E3_003Fresharper_002Dhost_003FSourcesCache_003Fa8f526c69ff66cb4b1df9a294cf57d59d828176c2d1638e624385083af8c4_003FRenderedFragmentExtensions_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=02a549c1_002D47fb_002D42e8_002Da221_002De7610d8913e4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Index_Should_Render_Hello_World" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::A2340062-CB09-4171-B337-C126A54CAA47::net9.0::TestProject1.index_tests.Index_Should_Render_Hello_World&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A2340062-CB09-4171-B337-C126A54CAA47::net9.0::TestProject1.SomethingDialogTests.Clicking_OK_Should_Call_Close_With_Ok_Result&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A2340062-CB09-4171-B337-C126A54CAA47::net9.0::TestProject1.SomethingDialogTests.Clicking_Cancel_Should_Call_Cancel&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A2340062-CB09-4171-B337-C126A54CAA47::net9.0::TestProject1.AddPersonDialog_Tests.Clicking_OK_Should_Save_And_Close_Dialog&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A2340062-CB09-4171-B337-C126A54CAA47::net9.0::TestProject1.AddPersonDialog_Tests.GIVEN_add_person_dialog_WHEN_input_is_valid_THEN_a_call_to_save_async_should_have_happened_once&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A2340062-CB09-4171-B337-C126A54CAA47::net9.0::TestProject1.AddPersonDialog_Tests.Submit_WithEmptyFirstName_Should_ShowSnackbar&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A2340062-CB09-4171-B337-C126A54CAA47::net9.0::TestProject1.AddPersonDialog_Tests.Submit_WithEmptyFirstName_Should_Call_ClientErrorHandlingService&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A2340062-CB09-4171-B337-C126A54CAA47::net9.0::TestProject1.AddPersonDialog_Tests.FirstName_Empty_Should_Not_Be_Valid&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A2340062-CB09-4171-B337-C126A54CAA47::net9.0::TestProject1.AddPersonDialog_Tests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=80b2814d_002Db823_002D495d_002D8a26_002D33c91803eced/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Index_Should_Render_Hello_World #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::A2340062-CB09-4171-B337-C126A54CAA47::net9.0::TestProject1.index_tests.Index_Should_Render_Hello_World&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A2340062-CB09-4171-B337-C126A54CAA47::net9.0::TestProject1.AddPersonDialog_Tests.FirstName_Empty_Should_Not_Be_Valid&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A2340062-CB09-4171-B337-C126A54CAA47::net9.0::TestProject1.AddPersonDialog_Tests.GIVEN_add_person_dialog_WHEN_not_adding_first_name_THEN_a_call_to_client_error_handling_service_with_correct_message_should_have_happened&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A2340062-CB09-4171-B337-C126A54CAA47::net9.0::TestProject1.AddPersonDialog_Tests.GIVEN_add_person_dialog_WHEN_not_adding_first_name_THEN_correct_error_message_should_be_displayed_in_dialog&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::A2340062-CB09-4171-B337-C126A54CAA47::net9.0::TestProject1.AddPersonDialog_Tests.GIVEN_add_person_dialog_WHEN_not_adding_last_name_THEN_correct_error_message_should_be_displayed_in_dialog&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

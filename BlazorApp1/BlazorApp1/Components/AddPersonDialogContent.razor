@@ -1,0 +1,28 @@
+<MudText Typo="Typo.h4">Add person</MudText>
+
+<MudForm @ref="@_form"
+         Model="_person"
+         @bind-IsValid="_isValid"
+         Validation="Validator.ValidateValue">
+
+    <MudTextField Label="First name"
+                  @bind-Value="_person.FirstName"
+                  For="@(() => _person.FirstName)"
+                  Immediate="true"
+                  InputId="first-name-input" />
+
+    <MudTextField Label="Last name"
+                  @bind-Value="_person.LastName"
+                  For="@(() => _person.LastName)"
+                  Immediate="true"
+                  InputId="last-name-input" />
+
+    <MudTextField Label="Birth year"
+                  @bind-Value="_person.BirthYear"
+                  For="@(() => _person.BirthYear)"
+                  Immediate="true"
+                  InputId="birth-year-input" />
+</MudForm>
+
+<MudButton Id="cancel-button" OnClick="Cancel">Cancel</MudButton>
+<MudButton Id="ok-button" Color="Color.Primary" OnClick="Submit">OK</MudButton>

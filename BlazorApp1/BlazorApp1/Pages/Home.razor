@@ -1,0 +1,39 @@
+﻿@page "/"
+@using BlazorApp1.Components
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+<MudButton @onclick="OpenDialogAsync" Variant="Variant.Filled" Color="Color.Primary">
+    Open blurry dialog
+</MudButton>
+
+<br/>
+
+<MudButton @onclick="OpenAddPersonDialog" Variant="Variant.Filled" Color="Color.Primary">
+    Add person
+</MudButton>
+
+Welcome to your new app.
+
+<style>
+    .my-custom-class {
+        backdrop-filter: blur(10px);
+    }
+</style>
+
+@code {
+    [Inject] private IDialogService DialogService { get; set; } = default!;
+    private Task OpenDialogAsync()
+    {
+        var options = new DialogOptions { BackgroundClass = "my-custom-class" };
+
+        return DialogService.ShowAsync<SomethingDialog>("Simple Dialog", options);
+    }
+
+    private async Task OpenAddPersonDialog()
+    {
+        await DialogService.ShowAsync<AddPersonDialog>("Add person");
+    }
+}

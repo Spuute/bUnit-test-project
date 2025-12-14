@@ -1,0 +1,24 @@
+@page "/person"
+<h3>Person</h3>
+
+@if (_persons.Count == 0)
+{
+    <MudText Typo="Typo.h2" Align="Align.Center">
+        Could not find any saved persons
+    </MudText>
+}
+else
+{
+    <MudTable Items="@_persons" Hover="true" Breakpoint="Breakpoint.Sm">
+        <HeaderContent>
+            <MudTh>Firstname</MudTh>
+            <MudTh>Lastname</MudTh>
+            <MudTh>Birth year</MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd DataLabel="Nr">@context.FirstName</MudTd>
+            <MudTd DataLabel="Sign">@context.LastName</MudTd>
+            <MudTd DataLabel="Name">@context.BirthYear</MudTd>
+        </RowTemplate>
+    </MudTable>
+}

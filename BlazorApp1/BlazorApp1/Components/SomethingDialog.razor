@@ -1,0 +1,22 @@
+<MudDialog>
+    <DialogContent>
+        Dialog Content
+    </DialogContent>
+    <DialogActions>
+        <MudButton id="cancel-button" OnClick="Cancel">Cancel</MudButton>
+        <MudButton id="ok-button" Color="Color.Primary" OnClick="Submit">OK</MudButton>
+    </DialogActions>
+</MudDialog>
+
+@code {
+    [CascadingParameter] private IMudDialogInstance MudDialog { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+    }
+
+    private void Submit() => MudDialog.Close(DialogResult.Ok(true));
+
+    private void Cancel() => MudDialog.Cancel();
+}
